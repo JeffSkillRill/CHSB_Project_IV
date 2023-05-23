@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/login2">
+
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.chsb_project.Fragment.Login"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/action_login2_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_login2_to_studentPage"
+            app:destination="@id/studentPage" />
+        <action
+            android:id="@+id/action_login2_to_teacherPage"
+            app:destination="@id/teacherPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.chsb_project.Fragment.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/studentPage"
+        android:name="com.example.chsb_project.Fragment.StudentPage"
+        android:label="fragment_student_page"
+        tools:layout="@layout/fragment_student_page" />
+    <fragment
+        android:id="@+id/teacherPage"
+        android:name="com.example.chsb_project.Fragment.TeacherPage"
+        android:label="fragment_teacher_page"
+        tools:layout="@layout/fragment_teacher_page" />
+</navigation>

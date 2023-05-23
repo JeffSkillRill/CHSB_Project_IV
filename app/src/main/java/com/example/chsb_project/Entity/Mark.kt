@@ -25,8 +25,8 @@ import com.example.chsb_project.Entity.User
 )
 data class Mark(
     @PrimaryKey(autoGenerate = true)
-    val id: Long = 0,
+    val id: Int = 0,
     val studentName: String,
-    val testId: Long,
+    val testId: Int,
     val mark: Int
 )
