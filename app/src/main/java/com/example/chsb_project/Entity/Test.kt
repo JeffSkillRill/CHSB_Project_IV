@@ -1,4 +1,4 @@
-package com.example.chsb_project.database
+package com.example.chsb_project.Entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

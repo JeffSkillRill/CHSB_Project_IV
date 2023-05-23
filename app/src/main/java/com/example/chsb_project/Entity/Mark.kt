@@ -1,12 +1,20 @@
-package com.example.chsb_project.database
+package com.example.chsb_project.Entity
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import com.example.chsb_project.Entity.Test
+import com.example.chsb_project.Entity.User
 
 @Entity(
     tableName = "marks",
     foreignKeys = [
+        ForeignKey(
+            entity = User::class,
+            parentColumns = ["id"],
+            childColumns = ["userId"],
+            onDelete = ForeignKey.CASCADE
+        ),
         ForeignKey(
             entity = Test::class,
             parentColumns = ["id"],
